@@ -102,7 +102,7 @@ source $ZSH/oh-my-zsh.sh
 # Functions
 # Write functions here
 workon(){
-    source ~/.virtualenvs/"$1"/bin/activate
+    source ~/.venvs/"$1"/bin/activate
 } 
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
@@ -119,9 +119,16 @@ alias vim="nvim"
 alias gacp="git add . && git commit -m \"Auto Alias Commit\" && git push"
 alias ogacp="cd ~/repos/voga-vault && git add . && git commit -m \"Auto Alias Commit\" && git push"
 alias update="sudo apt update && sudo apt upgrade -y"
+alias cat="batcat"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-PATH=~/.console-ninja/.bin:$PATH
+PATH=$PATH:$HOME/go/bin:~/.console-ninja/.bin
+
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+
+source <(fzf --zsh)
