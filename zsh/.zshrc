@@ -118,7 +118,7 @@ alias py="python3"
 alias vim="nvim"
 alias gacp="git add . && git commit -m \"Auto Alias Commit\" && git push"
 alias ogacp="cd ~/repos/voga-vault && git add . && git commit -m \"Auto Alias Commit\" && git push"
-alias update="sudo apt update && sudo apt upgrade -y && brew update"
+alias update="sudo apt update && sudo apt upgrade -y && brew update && brew upgrade && brew cleanup"
 alias cat="batcat"
 
 export NVM_DIR="$HOME/.nvm"
