@@ -4,3 +4,7 @@
 
 -- Disable Animations
 vim.g.snacks_animate = false
+
+-- Indent size
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
