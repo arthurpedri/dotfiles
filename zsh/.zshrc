@@ -105,21 +105,8 @@ workon(){
     source ~/.venvs/"$1"/bin/activate
 } 
 
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-alias python="python3"
-alias py="python3"
-alias vim="nvim"
-alias gacp="git add . && git commit -m \"Auto Alias Commit\" && git push"
-alias ogacp="cd ~/repos/voga-vault && git add . && git commit -m \"Auto Alias Commit\" && git push"
-alias update="sudo apt update && sudo apt upgrade -y && brew update && brew upgrade && brew cleanup"
-alias cat="batcat"
+# Aliases sourced from different file
+source ~/.aliaszshrc
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
