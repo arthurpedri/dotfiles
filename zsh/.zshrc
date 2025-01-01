@@ -127,8 +127,9 @@ export NVM_DIR="$HOME/.nvm"
 
 PATH=$PATH:$HOME/go/bin:~/.console-ninja/.bin
 
-
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
-
 source <(fzf --zsh)
+
+export EDITOR="nvim"
+export VISUAL="nvim"
