@@ -2,7 +2,7 @@ return {
   "goolord/alpha-nvim",
   opts = function(_, opts)
     local dashboard = require("alpha.themes.dashboard")
-    local logo = [[
+    local logoold = [[
      ⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣴⣾⠀⠀⠀⠀⠀
 ⠀    ⢀⣠⣴⣶⣶⣶⣾⣿⣿⣟⣹⣾⠇⠀⠀⠀⠀⠀
 ⠀⠀⠀⢠⣶⣿⠿⠿⣿⣿⢿⡻⢿⡟⠿⠟⠁⠀⠀⠀⠀⠀⠀
@@ -13,6 +13,14 @@ return {
 ⠀⠀⠀⠀⠀⠀⠸⣿⣿⡀⠘⣿⣾⠏⠁⣰⣿⡟⠀⠀  ⠀
 ⠀⠀⠀⠀⠀⠀⠀⠙⠿⣿⡶⠟⢿⣶⣾⡿⠋⠀    ⠀
             ]]
+    local logo = [[
+██╗   ██╗ ██████╗  ██████╗  █████╗ ██╗   ██╗██╗███╗   ███╗
+██║   ██║██╔═══██╗██╔════╝ ██╔══██╗██║   ██║██║████╗ ████║
+██║   ██║██║   ██║██║  ███╗███████║██║   ██║██║██╔████╔██║
+╚██╗ ██╔╝██║   ██║██║   ██║██╔══██║╚██╗ ██╔╝██║██║╚██╔╝██║
+ ╚████╔╝ ╚██████╔╝╚██████╔╝██║  ██║ ╚████╔╝ ██║██║ ╚═╝ ██║
+  ╚═══╝   ╚═════╝  ╚═════╝ ╚═╝  ╚═╝  ╚═══╝  ╚═╝╚═╝     ╚═╝
+    ]]
     dashboard.section.header.val = vim.split(logo, "\n", { trimempty = true })
     dashboard.config.layout = {
       { type = "padding", val = 2 }, -- Top padding
