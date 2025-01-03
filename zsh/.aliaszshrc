@@ -18,3 +18,18 @@ alias createalias='~/repos/scripts/createalias.sh'
 alias lg='lazygit'
 alias vogara='tmux a -t vogara'
 alias v='nvim'
+alias cd='z'
+
+# Dirs
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias ......="cd ../../../../.."
+
+# Eza
+alias l="eza -l --icons --git -a"
+alias lt="eza --tree --level=2 --long --icons --git"
+alias ltree="eza --tree --level=2  --icons --git"
+alias ll="eza -lh --icons --git"
+alias ls="eza --icons"

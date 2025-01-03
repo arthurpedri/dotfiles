@@ -96,6 +96,8 @@ source $ZSH/oh-my-zsh.sh
 # else
 #   export EDITOR='mvim'
 # fi
+export EDITOR="nvim"
+export VISUAL="nvim"
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -119,5 +121,6 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 source <(fzf --zsh)
 
-export EDITOR="nvim"
-export VISUAL="nvim"
+
+eval "$(zoxide init zsh)"
+
