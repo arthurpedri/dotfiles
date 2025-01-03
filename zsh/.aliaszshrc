@@ -17,3 +17,4 @@ alias cat="batcat"
 alias createalias='~/repos/scripts/createalias.sh'
 alias lg='lazygit'
 alias vogara='tmux a -t vogara'
+alias v='nvim'
