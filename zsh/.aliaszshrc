@@ -16,7 +16,6 @@ alias update="sudo apt update && sudo apt upgrade -y && brew update && brew upgr
 alias cat="batcat"
 alias createalias='~/repos/scripts/createalias.sh'
 alias lg='lazygit'
-alias vogara='tmux a -t vogara'
 alias v='nvim'
 alias cd='z'
 
