@@ -11,12 +11,14 @@ alias python="python3"
 alias py="python3"
 alias cd='j'
 alias z='j'
+alias zi='ji'
 alias vim="nvim"
 alias v='nvim'
 alias gacp="git add . && git commit -m \"Auto Alias Commit\" && git push"
 alias ogacp="cd ~/repos/voga-vault && git add . && git commit -m \"Auto Alias Commit\" && git push"
 alias update="sudo apt update && sudo apt upgrade -y && brew update && brew upgrade && brew cleanup"
 alias cat="batcat"
+alias bat="batcat"
 alias createalias='~/repos/scripts/createalias.sh'
 alias lg='lazygit'
 
@@ -29,8 +31,8 @@ alias ......="cd ../../../../.."
 
 # Eza
 alias l="eza -l --icons --git -a"
-alias la="eza -l --icons --git -a"
+alias la="l"
+alias ls="l"
 alias lt="eza --tree --level=2 --long --icons --git"
 alias ltree="eza --tree --level=2  --icons --git"
 alias ll="eza -lh --icons --git"
-alias ls="eza --icons"
