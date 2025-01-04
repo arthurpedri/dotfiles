@@ -8,7 +8,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="avit"
+# ZSH_THEME="avit"
 
 
 # Uncomment the following line to use case-sensitive completion.
@@ -111,5 +111,10 @@ export FZF_DEFAULT_OPTS=" \
 --multi"
 source <(fzf --zsh)
 
+# Starship
+export STARSHIP_CONFIG=~/.config/starship/starship.toml
+eval "$(starship init zsh)"
 
-
+if [[ -z "$TMUX" ]]; then
+  tmux a || tmux
+fi
