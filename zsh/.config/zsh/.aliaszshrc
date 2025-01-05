@@ -22,12 +22,16 @@ alias bat="batcat"
 alias createalias='~/repos/scripts/createalias.sh'
 alias lg='lazygit'
 
+# Only works in cinnamon
+alias afk='cinnamon-screensaver-command -l'
+
 # Dirs
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias ......="cd ../../../../.."
+alias mkdir='mkdir -pv'
 
 # Eza
 alias l="eza -l --icons --git -a"
