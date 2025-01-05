@@ -86,6 +86,10 @@ workon(){
     source ~/.venvs/"$1"/bin/activate
 } 
 
+# Makes directory and cd's into it
+mc(){
+    mkdir -p "$1" && cd "$1"
+}
 # Aliases sourced from different file
 source ~/.config/zsh/.aliaszshrc
 
