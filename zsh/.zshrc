@@ -115,6 +115,16 @@ export FZF_DEFAULT_OPTS=" \
 --multi"
 source <(fzf --zsh)
 
+
+# # Enable transient prompt
+# setopt transient_rprompt
+#
+# # Hook to clear the last prompt
+# precmd() {
+#   print -Pn "\e[1A\e[0J"
+# }
+
+
 # Starship
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
 eval "$(starship init zsh)"

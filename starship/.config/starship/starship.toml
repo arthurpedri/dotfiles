@@ -6,7 +6,8 @@ $directory
 $character
 """
 right_format = """$all$time$cmd_duration"""
-add_newline = true
+
+# add_newline = true
 # Inserts a blank line between shell prompts
 
 palette = "catppuccin_mocha"
