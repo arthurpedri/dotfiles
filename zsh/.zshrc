@@ -116,8 +116,11 @@ export FZF_DEFAULT_OPTS=" \
 source <(fzf --zsh)
 
 # Starship
-export STARSHIP_CONFIG=~/.config/starship/starship.toml
-eval "$(starship init zsh)"
+# export STARSHIP_CONFIG=~/.config/starship/starship.toml
+# eval "$(starship init zsh)"
+
+# Oh my posh
+eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/theme.omp.json)"
 
 if [[ -z "$TMUX" ]]; then
   tmux a || tmux
