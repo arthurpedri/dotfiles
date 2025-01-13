@@ -1,0 +1,22 @@
+body {
+    color: rgb(200, 200, 200) !important;
+    background-color :rgb(36, 36, 36) !important;
+    font-size: 25;
+    font-family: Helvetica !important;
+    line-spacing: 2 !important;
+}
+h1, h2, h3, h4, h5, h6 {
+    text-align: center !important;
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* Calibre Settings
+ * Color scheme: Black
+ * Page Layout:
+ *  Paged Mode, 1 max page
+ *  Margin: left: 220
+ *          right: 220
+ *          top: 100
+ *          bottom: 100
+ */
