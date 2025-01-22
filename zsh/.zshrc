@@ -83,7 +83,7 @@ export VISUAL="nvim"
 # Functions
 # Write functions here
 workon(){
-    source ~/.venvs/"$1"/bin/activate
+    source "$1"/bin/activate
 } 
 
 # Makes directory and cd's into it
