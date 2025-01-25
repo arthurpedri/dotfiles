@@ -132,6 +132,6 @@ eval "$(starship init zsh)"
 # Oh my posh
  # eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/startheme.omp.json)"
 
-if [[ -z "$TMUX" ]]; then
-  tmux a || tmux
-fi
+# if [[ -z "$TMUX" ]]; then
+#   tmux a || tmux
+# fi
