@@ -110,7 +110,7 @@ export FZF_DEFAULT_OPTS=" \
 --color=marker:#b4befe,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8 \
 --color=selected-bg:#45475a \
 --border \
---preview 'batcat --style=numbers --color=always --line-range :500 {}' \
+--preview 'bat --style=numbers --color=always --line-range :500 {}' \
 --height 70% \
 --multi"
 source <(fzf --zsh)
