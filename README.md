@@ -2,7 +2,7 @@
 
 ## Requisites
 1. Git ssh key added
-
+2. JetBrainsMono Nerd Font installed
 
 ## Steps for future automation
 ```
