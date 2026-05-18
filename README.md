@@ -5,7 +5,7 @@
 2. JetBrainsMono Nerd Font installed
 
 ## Steps for future automation
-```
+```bash
 sudo apt install stow
 mkdir ~/repos
 cd ~/repos
@@ -20,4 +20,15 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
 
+```
+
+## Optionals
+### Dotnet
+```bash
+wget https://dot.net/v1/dotnet-install.sh -O dotnet-install.sh
+chmod +x ./dotnet-install.sh
+./dotnet-install.sh --version latest
+# Path
+export DOTNET_ROOT=$HOME/.dotnet
+export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
 ```
