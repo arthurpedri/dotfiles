@@ -1,10 +1,12 @@
 # dotfiles
 
 ## Requisites
+
 1. Git ssh key added
 2. JetBrainsMono Nerd Font installed
 
 ## Steps for future automation
+
 ```bash
 sudo apt install stow
 mkdir ~/repos
@@ -23,7 +25,9 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 ```
 
 ## Optionals
+
 ### Dotnet
+
 ```bash
 wget https://dot.net/v1/dotnet-install.sh -O dotnet-install.sh
 chmod +x ./dotnet-install.sh
@@ -31,4 +35,11 @@ chmod +x ./dotnet-install.sh
 # Path
 export DOTNET_ROOT=$HOME/.dotnet
 export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
+```
+
+### EarlyOOM (Because kernel oom-killer is bad)
+
+```bash
+sudo apt install earlyoom
+sudo systemctl enable --now earlyoom
 ```
