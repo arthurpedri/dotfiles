@@ -7,8 +7,10 @@
 
 ## Steps for future automation
 
+### Mint
+
 ```bash
-sudo apt install stow
+sudo apt install stow tldr vlc
 mkdir ~/repos
 cd ~/repos
 git clone git@github.com:arthurpedri/dotfiles.git
@@ -20,7 +22,11 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 brew install starship bat fzf zoxide neovim eza
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+```
 
+### Fedora
+
+```bash
 
 ```
 

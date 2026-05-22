@@ -1,0 +1,9 @@
+[user]
+	name = Arthur Pedri Trevisol
+	email = arthur.pedri@gmail.com
+[pull]
+	rebase = false
+[core]
+	editor = nvim
+[init]
+	defaultBranch = main
