@@ -1,12 +1,21 @@
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
+
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
+
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
+
 # For a full list of active aliases, run `alias`.
+
 #
+
 # Example aliases
+
 # alias zshconfig="mate ~/.zshrc"
+
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
 #
+
 alias python="python3"
 alias py="python3"
 alias cd='j'
@@ -15,16 +24,21 @@ alias zi='ji'
 alias vim="nvim"
 alias v='nvim'
 alias gacp="git add . && git commit -m \"Auto Alias Commit\" && git push"
-alias ogacp="cd ~/repos/voga-vault && git add . && git commit -m \"Auto Alias Commit\" && git push"
-alias update="sudo apt update && sudo apt upgrade -y && brew update && brew upgrade && brew cleanup"
+alias ogacp="cd ~/dev/voga-vault && git add . && git commit -m \"Auto Alias Commit\" && git push"
+
+<!-- alias update="sudo apt update && sudo apt upgrade -y && brew update && brew upgrade && brew cleanup" -->
+
+alias update="sudo dnf upgrade"
 alias cat="bat"
-alias createalias='~/repos/scripts/createalias.sh'
+alias createalias='~/dev/scripts/createalias.sh'
 alias lg='lazygit'
 
 # Only works in cinnamon
+
 alias afk='cinnamon-screensaver-command -l'
 
 # Dirs
+
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
@@ -33,9 +47,10 @@ alias ......="cd ../../../../.."
 alias mkdir='mkdir -pv'
 
 # Eza
+
 alias l="eza -l --icons --git -a"
 alias la="l"
 alias ls="l"
 alias lt="eza --tree --level=2 --long --icons --git"
-alias ltree="eza --tree --level=2  --icons --git"
+alias ltree="eza --tree --level=2 --icons --git"
 alias ll="eza -lh --icons --git"
