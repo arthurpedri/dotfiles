@@ -74,8 +74,9 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
-# linuxbrew
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+# Not using linuxbrew in fedora
+# # linuxbrew
+# eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 export EDITOR="nvim"
 export VISUAL="nvim"
@@ -98,13 +99,11 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-# Dotnet Path
-export DOTNET_ROOT=$HOME/.dotnet
-export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
+# # Dotnet Path
+# export DOTNET_ROOT=$HOME/.dotnet
+# export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
 
 
-
-PATH=$PATH:$HOME/go/bin:~/.console-ninja/.bin
 
 eval "$(zoxide init --cmd j zsh)"
 

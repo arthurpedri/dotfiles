@@ -27,7 +27,9 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 ### Fedora
 
 ```bash
-
+sudo dnf install git stow tldr
+cd dotfiles
+stow -t ~ nvim starship zsh kitty solaar git
 ```
 
 ## Optionals
