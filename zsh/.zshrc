@@ -85,7 +85,7 @@ export VISUAL="nvim"
 # Write functions here
 workon(){
     source "$1"/bin/activate
-} 
+}
 
 # Makes directory and cd's into it
 mc(){
@@ -103,6 +103,9 @@ export NVM_DIR="$HOME/.nvm"
 # export DOTNET_ROOT=$HOME/.dotnet
 # export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
 
+## Go Path
+export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:$HOME/go/bin
 
 
 eval "$(zoxide init --cmd j zsh)"
