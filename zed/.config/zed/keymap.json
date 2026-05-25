@@ -24,4 +24,72 @@
       "j j": "vim::NormalBefore",
     },
   },
+  {
+    "context": "VimControl && !menu",
+    "bindings": {
+      "$": [
+        "vim::NextWordEnd",
+        {
+          "ignore_punctuation": true,
+        },
+      ],
+    },
+  },
+  {
+    "context": "VimControl && !menu",
+    "unbind": {
+      "shift-e": [
+        "vim::NextWordEnd",
+        {
+          "ignore_punctuation": true,
+        },
+      ],
+    },
+  },
+  {
+    "context": "VimControl && !menu",
+    "bindings": {
+      "shift-e": "vim::EndOfLine",
+    },
+  },
+  {
+    "context": "VimControl && !menu",
+    "unbind": {
+      "$": "vim::EndOfLine",
+    },
+  },
+  {
+    "context": "VimControl && !menu",
+    "bindings": {
+      "0": [
+        "vim::PreviousWordStart",
+        {
+          "ignore_punctuation": true
+        }
+      ]
+    }
+  },
+  {
+    "context": "VimControl && !menu",
+    "unbind": {
+      "shift-b": [
+        "vim::PreviousWordStart",
+        {
+          "ignore_punctuation": true
+        }
+      ]
+    }
+  },
+  {
+    "context": "VimControl && !menu",
+    "bindings": {
+      "shift-b": "vim::StartOfLine"
+    }
+  },
+  {
+    "context": "VimControl && !menu",
+    "unbind": {
+      "0": "vim::StartOfLine"
+    }
+  }
 ]
