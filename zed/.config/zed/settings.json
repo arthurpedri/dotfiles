@@ -7,8 +7,10 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "ui_font_family": "MonaspiceNe Nerd Font",
+  "buffer_font_family": "MonaspiceNe Nerd Font",
   "indent_guides": {
-    "coloring": "indent_aware"
+    "coloring": "indent_aware",
   },
   "git_panel": {
     "dock": "left",
@@ -21,7 +23,7 @@
   },
   "relative_line_numbers": "disabled",
   "terminal": {
-    "font_family": "JetBrainsMono Nerd Font",
+    "font_family": "MonaspiceNe Nerd Font",
   },
   "edit_predictions": {
     "provider": "copilot",
@@ -37,8 +39,8 @@
     },
   },
   "icon_theme": "Catppuccin Mocha",
-  "ui_font_size": 16,
-  "buffer_font_size": 15,
+  "ui_font_size": 18.0,
+  "buffer_font_size": 16.0,
   "theme": {
     "mode": "dark",
     "light": "One Light",
