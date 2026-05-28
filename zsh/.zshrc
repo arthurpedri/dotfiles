@@ -111,16 +111,20 @@ export PATH=$PATH:$HOME/go/bin
 eval "$(zoxide init --cmd j zsh)"
 
 # FZF
-# export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow'
-export FZF_DEFAULT_COMMAND='rg --files --hidden --glob "!.git"'
+# export FZF_CTRL_T_COMMAND='fd --type f --hidden --follow'
+export FZF_CTRL_T_COMMAND='rg --files --hidden --glob "!.git"'
 export FZF_DEFAULT_OPTS=" \
 --color=fg:#cdd6f4,header:#f38ba8,info:#cba6f7,pointer:#f5e0dc \
 --color=marker:#b4befe,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8 \
 --color=selected-bg:#45475a \
 --border \
---preview 'bat --style=numbers --color=always --line-range :500 {}' \
---height 70% \
---multi"
+--height 70%"
+export FZF_CTRL_T_OPTS=" \
+--multi \
+--preview 'bat --style=numbers --color=always --line-range :500 {}'"
+export FZF_CTRL_R_OPTS=" \
+--preview 'printf \"%s\n\" {} | cut -f2- | bat --language=bash --style=plain --color=always' \
+--preview-window=down:3:wrap"
 source <(fzf --zsh)
 
 
