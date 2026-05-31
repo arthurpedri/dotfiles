@@ -9,6 +9,20 @@
 {
   "ui_font_family": "MonaspiceNe Nerd Font",
   "buffer_font_family": "MonaspiceNe Nerd Font",
+  "buffer_font_features": {
+    "calt": true,
+    "liga": true,
+    "ss01": true,
+    "ss02": true,
+    "ss03": true,
+    "ss04": true,
+    "ss05": true,
+    "ss06": true,
+    "ss07": true,
+    "ss08": true,
+    "ss09": true,
+    "ss10": true,
+  },
   "indent_guides": {
     "coloring": "indent_aware",
   },

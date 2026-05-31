@@ -56,3 +56,20 @@ export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
 ```bash
 sudo systemctl enable --now earlyoom
 ```
+
+### KDE
+- Stretchly
+  - Flatpak
+- Krohnkite
+  - KWin Scripts
+  - 3px gaps
+- Panel Colorizer
+  - Widget
+- Compact Pager
+  - Widget
+- Global Menu
+  - Widget
+- Window Rules
+  - 92% opacity on all
+  - Exception for browser, discord
+-
