@@ -35,9 +35,15 @@ sudo dnf copr enable atim/starship
 sudo dnf install starship
 sudo dnf copr enable dejan/lazygit
 sudo dnf install lazygit
+# Without OMZ
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.local/share/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.local/share/zsh-syntax-highlighting
+# End
+# With OMZ
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+# End
 ```
 
 ## Optionals
