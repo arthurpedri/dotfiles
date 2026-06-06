@@ -147,3 +147,4 @@ eval "$(starship init zsh)"
 # if [[ -z "$TMUX" ]]; then
 #   tmux a || tmux
 # fi
+clear
