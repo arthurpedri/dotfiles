@@ -33,6 +33,8 @@ stow -t ~ nvim starship zsh kitty solaar git
 sudo dnf install kitty zsh fzf zoxide bat eza neovim
 sudo dnf copr enable atim/starship
 sudo dnf install starship
+sudo dnf copr enable dejan/lazygit
+sudo dnf install lazygit
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
@@ -58,6 +60,7 @@ sudo systemctl enable --now earlyoom
 ```
 
 ### KDE
+
 - Stretchly
   - Flatpak
 - Krohnkite
